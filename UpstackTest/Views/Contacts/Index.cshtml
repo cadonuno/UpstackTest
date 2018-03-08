@@ -1,0 +1,76 @@
+﻿@model List<UpstackTest.MockDb.Contact>
+
+@{
+    Layout = "~/Views/Layout/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Contact List</title>
+    </head>
+    <body>
+
+        <div>
+            <h4>Contacts:</h4>
+            <hr/>
+            <br/>
+            @using (Html.BeginForm("Index", "Contacts", FormMethod.Post))
+            {
+                @Html.ValidationSummary(true);
+                <input type = "text" name="arguments" placeholder="Insert text to search contacts..." value="@ViewBag.Search"/>
+                <input type = "submit" value = "Search" />
+            }
+           
+            @if (ViewBag.Message != null && ViewBag.Message != "")
+            {
+                <br />
+                <div style="color: @ViewBag.Color">
+                    @ViewBag.Message
+                </div>
+                <br/>
+            }
+        
+            <br/>
+            @if(Model.Count <= 0)
+            {
+                <text>
+                    No contacts found, you may want to add a new one here clicking the button below
+                </text>
+            }
+            else
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Phone Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var contact in Model)
+                        {
+                            <tr>
+                                <td>@contact.Id</td>
+                                <td>@contact.Name</td>
+                                <td>@contact.Address</td>
+                                <td>@contact.PhoneNumber</td>
+                                <td>@Html.ActionLink("Edit", "Alter", new { id = contact.Id }) &nbsp; | &nbsp; @Html.ActionLink("Delete", "Delete", new { id = contact.Id })</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            </div>
+        <div>
+            <br/>
+        <hr/>
+        @Html.ActionLink("Add New", "New")
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\bin\Debug\netcoreapp2.0\UpstackTest.deps.json
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\bin\Debug\netcoreapp2.0\UpstackTest.runtimeconfig.json
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\bin\Debug\netcoreapp2.0\UpstackTest.runtimeconfig.dev.json
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\bin\Debug\netcoreapp2.0\UpstackTest.dll
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\obj\Debug\netcoreapp2.0\UpstackTest.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\obj\Debug\netcoreapp2.0\UpstackTest.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\obj\Debug\netcoreapp2.0\UpstackTest.AssemblyInfoInputs.cache
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\obj\Debug\netcoreapp2.0\UpstackTest.AssemblyInfo.cs
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\bin\Debug\netcoreapp2.0\UpstackTest.pdb
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\obj\Debug\netcoreapp2.0\UpstackTest.dll
+C:\Users\Ricardo\source\repos\UpstackTest\UpstackTest\obj\Debug\netcoreapp2.0\UpstackTest.pdb
